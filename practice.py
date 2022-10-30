@@ -20,13 +20,21 @@
 # # print(my_list)
 # my_list.reverse()
 # print(my_list)
+#
+# lst_1=[1,2,3]
+# lst_2=[4,5,6]
+# lst_3=[7,8,9]
+#
+# matrix = [lst_1,lst_2,lst_3]
+#
+# my_matrix = [matrix[1][1:], matrix[2][1:]]
+#
+# print(my_matrix)
 
-lst_1=[1,2,3]
-lst_2=[4,5,6]
-lst_3=[7,8,9]
+my_dict = {'name': 'Jahanzeb', 'age': '75', 'product': [2, 333, 675]}
+# my_dict['product'][1] -= 123
+# print(my_dict['product'][1])
 
-matrix = [lst_1,lst_2,lst_3]
-
-my_matrix = [matrix[1][1:], matrix[2][1:]]
-
-print(my_matrix)
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.items())
