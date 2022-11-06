@@ -95,13 +95,16 @@
 # for i in range(0, 10, 2):
 #     print(i)
 
-x = [1,2,3,4]
+# x = [1,2,3,4]
 
 # out = []
 # for item in x:
 #     out.append(item**2)
 #
 # print(out)
+#
+# out = [item**2 for item in x]
+# print(out)
 
-out = [item**2 for item in x]
-print(out)
+userName = input("Enter your name: ")
+print("Welcome to this lecture " + userName)
