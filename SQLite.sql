@@ -22,4 +22,47 @@
 -- SET age = 32
 -- WHERE id = 1;
 -- DELETE FROM Persons WHERE id=3;
-SELECT * FROM Persons ORDER by lastname LIMIT 2;
+-- SELECT * FROM Persons ORDER by lastname LIMIT 2;
+
+
+--CREATE TABLE Customers (
+--    ID int NOT NULL,
+--    LastName varchar(255) NOT NULL,
+--    FirstName varchar(255),
+--    Age int,
+--    CONSTRAINT PK_Customer PRIMARY KEY (ID)
+--);
+--CREATE TABLE Products (
+--  ID int NOT NULL,
+--  name varchar(255) NOT NULL,
+--  qty int,
+--  CONSTRAINT PK_Product PRIMARY KEY (ID)
+--);
+--CREATE TABLE SoldProducts (
+--  ID int NOT NULL,
+--  ProductID int,
+--  CustomerID int,
+--  qty int,
+--  CONSTRAINT PK_SoldProduct PRIMARY KEY (ID)
+--);
+--INSERT INTO Customers VALUES (1, 'Naeem', 'Jahanzeb', 30);
+--INSERT INTO Customers VALUES (2, 'Hassan', 'Muhammad', 21);
+--INSERT INTO Customers VALUES (3, 'Adnan', 'Muhammad', 21);
+--INSERT INTO Customers VALUES (4, 'Rahman', 'Muneeb', 18);
+--INSERT INTO Products VALUES (1, 'Rainbow Snikers', 100);
+--INSERT INTO Products VALUES (2, 'Pumps', 100);
+--INSERT INTO Products VALUES (3, 'Loofers', 100);
+--INSERT INTO Products VALUES (4, 'Dress Shoes', 100);
+--INSERT INTO Products VALUES (5, 'Heels', 100);
+--INSERT INTO SoldProducts VALUES (1, 1, 1, 1);
+--INSERT INTO SoldProducts VALUES (2, 2, 1, 2);
+--INSERT INTO SoldProducts VALUES (3, 4, 1, 1);
+--INSERT INTO SoldProducts VALUES (4, 4, 2, 1);
+--INSERT INTO SoldProducts VALUES (5, 3, 2, 1);
+--INSERT INTO SoldProducts VALUES (6, 2, 3, 1);
+--SELECT * FROM Customers;
+--SELECT * FROM Products;
+--SELECT * from SoldProducts;
+SELECT Customers.FirstName, Customers.LastName, SoldProducts.qty, Products.name FROM Customers
+INNER JOIN SoldProducts ON Customers.ID=SoldProducts.CustomerID
+INNER JOIN Products on SoldProducts.ProductID=Products.ID;
