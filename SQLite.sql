@@ -1,0 +1,25 @@
+-- CREATE TABLE Persons (
+--    PersonID int,
+--    LastName varchar(255),
+--    FirstName varchar(255),
+--    Address varchar(255),
+--    City varchar(255) 
+-- );
+-- CREATE TABLE Persons (
+--    ID int NOT NULL,
+--    LastName varchar(255) NOT NULL,
+--    FirstName varchar(255),
+--    Age int,
+--    PRIMARY KEY (ID)
+-- );
+-- INSERT INTO Persons (id, lastname, firstname, age)
+-- VALUES (1, 'Naeem', 'Jahanzeb', 30);
+-- INSERT INTO Persons (id, lastname, firstname, age)
+-- VALUES (2, 'Butt', 'Rehan', 30);
+-- INSERT INTO Persons (id, lastname, firstname, age)
+-- VALUES (3, 'Sheraz', 'Sheakh', 30);
+-- UPDATE Persons
+-- SET age = 32
+-- WHERE id = 1;
+-- DELETE FROM Persons WHERE id=3;
+SELECT * FROM Persons ORDER by lastname LIMIT 2;
