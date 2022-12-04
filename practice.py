@@ -106,5 +106,100 @@
 # out = [item**2 for item in x]
 # print(out)
 
-userName = input("Enter your name: ")
-print("Welcome to this lecture " + userName)
+# userName = input("Enter your name: ")
+# print("Welcome to this lecture " + userName)
+
+# print(type(1))
+# print(type([]))
+
+# class Sample():
+#     pass
+#
+# x = Sample()
+#
+# print(type(x))
+
+# class Dog():
+#
+#     species = 'mammal'
+#
+#     def __init__(self,breed):
+#         self.breed = breed
+#
+# sam = Dog(breed='Lab')
+# bil = Dog(breed='Huskie')
+#
+# print(sam.species)
+# print(bil.species)
+
+# class Circle():
+#     pi = 3.14
+#
+#     def __init__(self, radius=1):
+#         self.radius = radius
+#
+#     def area(self):
+#         return self.radius * self.radius * Circle.pi
+#
+#     def setRadius(self, radius):
+#         self.radius = radius
+#
+#     def getRadius(self):
+#         return self.radius
+#
+# c = Circle()
+#
+# print ('Radius is :', c.getRadius())
+# c.setRadius(2)
+# print ('Radius is: ',c.getRadius())
+# print ('Area is: ',c.area())
+
+# class Animal():
+#     def __init__(self):
+#         print ("Animal created")
+#
+#     def whoAmI(self):
+#         print ("Animal")
+#
+#     def eat(self):
+#         print ("Eating")
+#
+# class Dog(Animal):
+#     def __init__(self):
+#         Animal.__init__(self)
+#         print ("Dog created")
+#
+#     def whoAmI(self):
+#         print ("Dog")
+#
+#     def bark(self):
+#         print ("Woof!")
+#
+# d = Dog()
+# d.whoAmI()
+# d.eat()
+# d.bark()
+# d.length()
+
+# class Book():
+#     def __init__(self, title, author, pages):
+#         print ("A book is created")
+#         self.title = title
+#         self.author = author
+#         self.pages = pages
+#
+#     def __str__(self):
+#         return ("Title:%s , author:%s, pages:%s " %(self.title, self.author, self.pages))
+#
+#     def __len__(self):
+#         return self.pages
+#
+#     def __del__(self):
+#         print ("A book is destroyed")
+#
+# book = Book("Python Rocks!", "Jahanzeb Naeem", 159)
+#
+# #Special Methods
+# print (book)
+# print (len(book))
+# del (book)
